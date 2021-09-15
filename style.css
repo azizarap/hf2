@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    /* transition: all 500ms ease-in-out; */
+}
+/* body{
+    font-family: 'Poppins', sans-serif;
+} */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px){
+    .container{
+            width: 970px;
+        }
+}
+
+/* large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px; 
+    }
+}
+
+
+/* glopal */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Mukta', sans-serif;
+}
+
+header{
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./week-in-review_1200x675_hero_1110219_animated.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .overly{
+    background: linear-gradient(55deg, #3f51b5ed 50%, #323234f7 0%);
+    width: 100%;
+    height: 100vh;
+}
+header .overly .container .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+header .overly .container .nav img{
+    width: 100px;
+    max-width: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+header .overly .container .nav nav ul{
+    display: flex;
+    list-style: none;
+}
+header .overly .container .nav nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 30px;
+}
+header .overly .container .nav nav ul li a:hover{
+    text-decoration: underline ;
+    color: rgba(238, 238, 238, 0.72);
+}
+header .overly .container .nav button{
+    padding: 11px 23px;
+    font-size: 13px;
+    text-transform: initial;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 11px;
+}
+header .overly .container .nav button:hover{
+    /* background-color: rgba(119, 113, 113, 0.576); */
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+
+header .container .respon{
+    position: relative;
+    display: none;
+}
+header .container .respon .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* background-color: #fff; */
+}
+header .container .respon .icon span{
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+header .container .respon .icon span:first-child{
+    /* height: 3px; */
+    width: 100%;
+}
+header .container .respon .icon span:nth-child(2){
+    /* height: 4px; */
+    width: 60%;
+    transition: 0.3s;
+}
+header .container .respon:hover .icon span:nth-child(2){
+    width: 100%;
+}
+header .container .respon .icon span:last-child{
+    /* height: 5px; */
+    width: 100%;
+}
+
+
+header .container .respon ul {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    background: #f6f6f6;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    cursor: pointer;
+    z-index: 1;
+}
+header .respon:hover ul{
+    display: block;
+}
+header .respon ul::before{
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+header .respon ul li{
+    list-style: none;
+}
+header .respon ul li a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 42px;
+}
+header .respon ul li a:hover{
+    padding-left: 25px;
+    color: #fff;
+}
+header .respon ul li:hover{
+    /* background-color: orangered; */
+    background: linear-gradient(55deg, #323234f7 50%, #3f51b5ed 0%);
+}
+@media (max-width: 991px) {
+    header .container .respon{
+        display: block;
+    }
+    header .overly .container .nav nav {
+        display: none;
+    }
+    header .overly .container .nav button{
+        display: none;
+    }
+}
+
+
+
+header .overly .container .portifol{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding-top: 160px;
+    flex-wrap: wrap;
+    
+}
+header .overly .container .portifol .image{}
+header .overly .container .portifol .image img{
+    width: 196px;
+    max-width: 100%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px -2px #fff;
+}
+header .overly .container .portifol .text small{
+    font-size: 22px;
+    color: #fff;
+    font-family: monospace;
+}
+header .overly .container .portifol .text h2{
+    color: #fff;
+    line-height: 52px;
+    font-size: 38px;
+    padding-top: 15px;
+    text-transform: initial;
+}
+header .overly .container .portifol .text h4{
+    padding-top: 32px;
+    color: rgba(255, 255, 255, 0.59);
+    letter-spacing: 1px;
+    text-transform: initial;
+}
+header .overly .container .portifol .image ,
+header .overly .container .portifol .text{
+    flex-basis: 45%;
+}
+@media (max-width: 767px) {
+    header .overly .container .portifol .image ,
+    header .overly .container .portifol .text{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    header .overly .container .portifol .image {
+        position: relative;
+        top: -95px;
+    }
+    header .overly .container .portifol .text{
+        top: -79px;
+        position: relative;
+    }
+    /* header .overly .container .portifol .text small{
+        font-size: 20px;
+    }
+    header .overly .container .portifol .text h2{
+        padding-top: 11px;
+        line-height: 39px;
+        font-size: 21px;
+    }
+    header .overly .container .portifol .text h4{
+        font-size: 13px;
+    } */
+}
+
